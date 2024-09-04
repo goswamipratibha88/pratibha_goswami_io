@@ -1,0 +1,10 @@
+body {
+    background-color: peru;
+    width: fit-content;
+}
+
+h1 {
+    font-weight: 800;
+    color: darkblue;
+    text-align: center;
+}
