@@ -1,10 +1,158 @@
+
 body {
-    background-color: peru;
-    width: fit-content;
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    background:whitesmoke; 
+}
+
+main{
+    margin: 2vw;
 }
 
 h1 {
     font-weight: 800;
-    color: darkblue;
     text-align: center;
+    color: black
+} 
+
+.navbar ul{
+list-style-type: none;
+background-color: black;
+padding: 0px;
+margin: 0px;;
+overflow: hidden;
+}
+
+.navbar li{
+float: left;    
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color:grey;
+}
+
+h2 {
+    color:black;
+}
+.art-piece  {
+    display: inline-block;
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px lightgray;
+}
+
+#artworks-container img {
+    width: 20vw;
+    height: 30vh;
+    max-width: 100%;
+}
+
+
+#artworks-container h2{
+    font-size: 15px;
+    font-family: Arial;
+}
+
+#artworks-container p{
+    font-size:small;
+    font-family: Arial;
+}
+
+#art-section{
+    padding-bottom: 20vh;   
+}
+
+#homePage-section{
+    display: grid;
+    grid-template-columns: auto auto;
+    color: black;
+    
+}
+
+#Homepage h2{
+    font-family: sans-serif;
+    font-size: 30px;
+    padding-left: 40px;
+   
+}
+
+ #homePage-container img{
+ padding-top: 10px;
+ padding-bottom: 10px;
+ padding-left: 60px;
+ width: 50vw;
+ height: 60vh;
+}  
+
+#quotes{
+    font-family:cursive;
+    color: darkslategrey;
+    font-size: 25px;
+    padding-left: 40px;
+    padding-top: 70px;
+}
+
+
+#product-section h3{
+    font-size: 18px;
+    font-family: Arial;
+    color: brown;
+    padding-left: 30px;
+}
+
+#product-section p{
+    font-size: 15px;
+    font-family: Arial;
+    padding-left: 30px;
+}
+
+#product-section img{
+    width: 20vw;
+    height: 30vh;
+    max-width: 100%;
+    border-color: black;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 30px;
+    
+}
+
+#product-container div{
+display:inline-block;
+background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px lightgray;
+}
+
+#nextPageButton {
+    margin-top: 20px;
+    padding: 10px 10px;
+    border: none;
+    color: white;
+    background-color: black;
+    float: right;
+}
+
+#backPageButton{
+    margin-top: 20px;
+    padding: 10px 10px;
+    border: none;
+    color: white;
+    background-color: black;
+    float: left;
 }
