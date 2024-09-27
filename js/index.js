@@ -23,7 +23,7 @@ function displayProducts(productData) {
         productDiv.className = 'product-piece';
 
         const prodTitle = document.createElement('h3');
-        prodTitle.innerText = "Name:  " + product.title;
+        prodTitle.innerText = product.title;
 
         const prodImage = document.createElement('img');
         prodImage.src = product.image_url;
@@ -67,6 +67,7 @@ async function displayArtworks() {
         artDiv.className = 'art-piece';
 
         const title = document.createElement('h2');
+        title.className = "arttitle";
         title.innerText = art.title || 'Untitled';
 
         //ID cn be used to display image id
@@ -92,16 +93,22 @@ async function displayArtworks() {
 
 }
 
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
 //For Next Button
 document.getElementById('nextPageButton').addEventListener('click', () => {
     currentPage++;
     displayArtworks();
+    scrollToTop();
 });
 
 //For Back button
 document.getElementById('backPageButton').addEventListener('click', () => {
     currentPage--;
     displayArtworks();
+    scrollToTop();
 });
 
 //displayArtworks() - To display art details under artworks tab
